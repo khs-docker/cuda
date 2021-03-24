@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:11.0-cudnn8-devel-ubuntu18.04
 MAINTAINER khs <darkflash76@gmail.com>
 
 ADD resources/timezone.sh /timezone.sh

@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 RUN sh /timezone.sh ubuntu
 RUN apt-get install -y wget build-essential checkinstall
 RUN apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
-RUN apt-get install -y netbase
+RUN apt-get install -y netbase liblzma-dev
 WORKDIR /usr/src/Python-3.8.8
 RUN ./configure --enable-optimizations && make altinstall
 RUN update-alternatives --install /usr/bin/python python /usr/local/bin/python3.8 1
